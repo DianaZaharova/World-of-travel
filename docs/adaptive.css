@@ -1,0 +1,143 @@
+/* menu */
+
+@media only screen and (min-width: 649px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+/* 1366-1500 */
+
+@media only screen and (min-width: 1366px) and (max-width: 1500px) {
+  .desktop-nav__item {
+    padding-right: 1.684vw;
+  }
+
+  .section__text {
+    font: 1.171vw/1.391vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    margin: 0 0 1.8vw 1.094vw;
+    width: 28.865vw;
+  }
+}
+
+/* 650-1366 */
+
+@media only screen and (min-width: 650px) and (max-width: 1365px) {
+
+  .header {
+    height: 16.309vw;
+    margin-bottom: 2.93vw;
+    width: 92%;
+  }
+
+  .header__logo {
+    width: 10.156vw;
+    height: 3.809vw;
+    margin-left: 0;
+  }
+
+  .desktop-nav__item {
+    font: 1.563vw/1.855vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    padding-right: 2.1vw;
+  }
+
+  .section {
+    margin-left: 4vw;
+    margin-right: 5.469vw;
+  }
+
+  .section__title {
+    font: 19.531vw/25.879vw PTSerif-Bold, arial, helvetica, sans-serif;
+  }
+
+  .section__sibtitle {
+    font: 6.836vw/9.082vw PTSerif-Bold, arial, helvetica, sans-serif;
+    top: 15.979vw;
+    left: 5.7vw;
+  }
+
+  .section__text {
+    width: 38.865vw;
+    font: 1.563vw/1.855vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    margin: 0 0 2.637vw 1.5vw;
+  }
+
+  .section__btn {
+    width: 20.521vw;
+    height: 4.177vw;
+    font: 1.563vw/1.855vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    margin-left: 1.6vw;
+  }
+
+  .aside {
+    margin-top: 71px;
+  }
+
+  .aside__img {
+    margin-right: 2.246vw;
+  }
+  
+  .aside__img-temple {
+    height: 29.297vw;
+  }
+  
+  .aside__img-gates,
+  .aside__img-field {
+    height: 26.367vw;
+  }
+}
+
+/* 200-650 */
+
+@media only screen and (min-width: 200px) and (max-width: 649px) {
+  .aside {
+    display: none;
+  }
+
+  .header {
+    height: 32vw;
+    margin-bottom: 4.533vw;
+    width: 83%;
+  }
+
+  .header__logo {
+    width: 27.733vw;
+    height: 10.400vw;
+    margin-left: 2.667vw;
+  }
+
+  .section {
+    margin-left: 4.267vw;
+  }
+
+  .section__title {
+    font: 45.333vw/60vw PTSerif-Bold, arial, helvetica, sans-serif;
+    margin-bottom: 10.667vw;
+  }
+
+  .section__sibtitle {
+    font: 16vw/21.067vw PTSerif-Bold, arial, helvetica, sans-serif;
+    top: 39.979vw;
+    left: 15.7vw;
+  }
+
+  .section__text {
+    width: 78.865vw;
+    font: 4.800vw/5.867vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    margin: 0 0 9.333vw 6.400vw;
+    text-align: center;
+  }
+
+  .section__btn {
+    width: 55.733vw;
+    height: 11.733vw;
+    font: 4.267vw/5.067vw MuseoSansCyrl, arial, helvetica, sans-serif;
+    margin-left: 16vw;
+  }
+}

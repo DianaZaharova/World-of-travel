@@ -1,0 +1,246 @@
+.body {
+  background: fixed no-repeat url(img/background.png);
+  background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 12.083vw;
+  align-items: center;
+  margin: 0 auto 2vw auto;
+  width: 88%;
+}
+
+.header__logo {
+  background: no-repeat url(img/Logo.svg);
+  width: 7.604vw;
+  height: 2.865vw;
+  margin-left: 4.427vw;
+}
+
+/*Desktop-menu*/
+
+.desktop-nav__item {
+  text-decoration: none;
+  color: #f8eee4;
+  font: 1.146vw/1.354vw MuseoSansCyrl, arial, helvetica, sans-serif;
+  cursor: pointer;
+  transition: color 2s ease-out;
+  padding-right: 1.823vw;
+}
+
+.desktop-nav__item:last-child {
+  padding-right: 0;
+}
+
+.desktop-nav__item:hover {
+  color: #f74242;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  position: relative;
+  margin-left: 10.375vw;
+}
+
+.section__title {
+  font: 14.583vw/19.323vw PTSerif-Bold, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  opacity: 0.4;
+  margin: 0 0 0.573vw 0;
+}
+
+.section__sibtitle {
+  font: 5.104vw/6.771vw PTSerif-Bold, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  position: absolute;
+  top: 11.979vw;
+  left: 4.323vw;
+  margin: 0;
+}
+
+.section__text {
+  width: 27.865vw;
+  font: 1.146vw/1.354vw MuseoSansCyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  margin: 0 0 2.1vw 1.094vw;
+}
+
+.section__btn {
+  width: 15.521vw;
+  height: 3.177vw;
+  background: #d4bea3;
+  border-radius: 48px;
+  font: 1.146vw/1.354vw MuseoSansCyrl, arial, helvetica, sans-serif;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background 1s ease-out;
+  outline: none;
+  margin-left: 1.146vw;
+}
+
+.section__btn:hover {
+  background: #f74242;
+}
+
+/* aside */
+
+.aside {
+  display: flex;
+  align-items: center;
+  margin-top: 5.208vw;
+  overflow: hidden;
+}
+
+.aside__img {
+  margin-right: 1.719vw;
+}
+
+.aside__img:last-child {
+  margin-right: 0;
+}
+
+.aside__img-temple {
+  height: 21.927vw;
+}
+
+.aside__img-gates,
+.aside__img-field {
+  height: 19.740vw;
+}
+
+/*Mobile-menu*/
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2.400vw;
+  z-index: 9999999;
+  margin-top: 2.667vw;
+}
+
+.mobile-nav__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.2vw;
+  height: 5.6vw;
+  cursor: pointer;
+  transition: .4s;
+  z-index: 9999;
+}
+
+.mobile-nav__icon {
+  display: block;
+  position: relative;
+  background-color: #e5e5e5;
+  width: 6.667vw;
+  height: 0.8vw;
+  transition: .4s;
+}
+
+.mobile-nav__icon::after, .mobile-nav__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #e5e5e5;
+  width: 6.667vw;
+  height: 0.8vw;
+  transition: .4s;
+}
+
+.mobile-nav__icon::after {
+  top: 1.867vw;
+}
+
+.mobile-nav__icon::before {
+  top: -1.867vw;
+}
+
+.mobile-nav__container {
+  position: fixed;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 999;
+  opacity: 1;
+  transition: .5s;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.mobile-nav__list {
+  transition: .5s;
+  list-style: none;
+  padding-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.mobile-nav__item {
+  margin-bottom: 6.4vw;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  color: #000;
+  font: bold 8vw/9.6vw MuseoSansCyrl, arial, helvetica, sans-serif;
+  transition: color 2s ease-out;
+}
+
+.mobile-nav__link:hover {
+  color:#f74242;
+}
+
+.mobile-nav__checkbox {
+  display: none;
+}
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__nav  {
+  opacity: 1;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__container {
+  height: 100%;
+}
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn {
+  margin-right: -4.8vw;
+  margin-bottom: 13.333vw;
+}
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon {
+  background: transparent;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon::before, .mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon::after {
+  top: 0;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background-color: #172f27;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background-color: #172f27;
+}
